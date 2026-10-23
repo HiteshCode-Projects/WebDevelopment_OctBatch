@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .product{
+        background-color: aqua;
+        height: 600px;
+
+        display: flex;
+        /* By default it goes in row format */
+
+        flex-direction: row;
+        justify-content:center;
+        gap: 25px;
+
+        align-items: center;
+        flex-wrap: wrap;
+
+
+
+       }
+           
+
+
+        .box{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            
+            text-align: center;
+
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="box">Cake</div>
+        <div class="box">Cookies</div>
+        <div class="box">Pastry</div>
+    </div>
+</body>
+</html>
