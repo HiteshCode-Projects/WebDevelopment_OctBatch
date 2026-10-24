@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            display: grid;
+            
+            /* grid-template-columns: 200px 200px 200px; */
+
+            /* grid-template-columns:  1fr 1fr 1fr 1fr; */
+
+            /* grid-template-columns: 2fr 1fr; */
+
+            /* grid-template-columns: repeat(No of Column, size of eachcolumn ); */
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+        }
+     
+           
+
+
+        .box{
+            background-color: brown;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="box">Cake</div>
+        <div class="box">Cookies</div>
+        <div class="box">Pastry</div>
+        <div class="box">Cake</div>
+        <div class="box">Cookies</div>
+        <div class="box">Pastry</div>
+    </div>
+</body>
+</html>
