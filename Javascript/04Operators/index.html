@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Operators :  Action on Data
+
+        //1. Arthmetic Op : + , - , * / , %
+
+        let x = 10
+        let y = 3
+
+        console.log(x+y)
+        console.log(x-y)
+        console.log(x/y)
+        console.log(x*y)
+        console.log(x%y)  //10 % 3 - 1
+
+
+        //% - Remainder
+        console.log(12 % 2)  //0
+        console.log(14 %3)  // 2
+
+
+        // Left < Right -- Left Number
+        console.log(2 % 9)   // 2
+        console.log(1 % 5)   // 1
+
+ 
+
+        //2. Assignment : =
+
+        let score = 5
+
+        score += 1
+
+        console.log(score)
+
+        //3. Relational Op - Output in Boolean
+
+        console.log(10 > 4)  //T
+ 
+        console.log(10 < 8)  //F
+
+        console.log(5 >= 5)  // T
+
+        console.log(5 <= 8)  // T
+
+        let num = 10
+        let num1 = "10"
+
+        // == WILL ONLY CHECKS VALUE
+        console.log(num == num1) // T
+
+
+        // === WILL ONLY CHECKS VALUE AND Data Type
+
+        console.log(num === num1)  //False
+
+
+
+        //LOGICAL - AND , OR , NOT
+
+        // AND - && : Both Condition True Output True
+        // OR - ||  : Any one Condition True Output True
+        // NOT ! - Opp Value
+
+        let isMember = true
+        let TotalBill = 800
+
+        console.log(" Discount Applied " ,   isMember && TotalBill >=800)
+        //                                     T   &&      T
+        
+        
+
+        let LoginStatus = true
+        let NetflixSub = false
+
+        console.log("Access To Netlfix App" , LoginStatus || NetflixSub)
+
+
+        let paymentStatys = false
+
+        console.log(!paymentStatys)
+
+
+
+
+    </script>
+</body>
+</html>
