@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "John"
+        let age = 21
+
+        console.log("Good Morning My Name is " + name + "and I am " + age + "yrs old" )
+
+
+        //Modern Way - Template ` Back Tick :  ${VariableName/Parameter}  `
+
+        console.log(`
+        Dear ${name},
+        How are you doing , are you ${age} yrs old? 
+        
+        `)
+
+
+        //Spread Operator :  ... 3 dots(symbol) - Make a clone/duplicate
+
+        let fruits = ["Mango" , "apple"]
+        let veggies = ["Tomato" , "Carrot"]
+
+        let shoppingItems = [...veggies ,"Milk " , "Bread" , ...fruits     ]
+        console.log(shoppingItems)
+
+
+    </script>
+</body>
+</html>
