@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Functions : Help us To do a specific Task
+    // Syntax : function FunctioName() {  Task-Instruction    }
+
+    //1. 
+    function Greet(){
+        console.log("Good Morning User")
+
+        alert('Welcome Back!') //Pop up msg
+    }
+    
+    Greet()  //Call The Function - Start Doing Task
+
+
+    //2 function with parameter: Acts like Varaible
+
+    function greeting(name){
+
+        console.log(`Welcome Back ${name}`)
+    }
+
+    greeting("Thanu")
+    greeting("Pravin")
+    greeting("Aditya")
+
+
+    //3. function with return  keyword- To Give something Back
+    function TotalBill(price,qty){
+
+        return price * qty
+
+    }
+
+    let result =   TotalBill(100,2)
+    console.log(result)
+
+
+    //4. Arrow Function ()=>  : Symbol
+
+    let add = (a,b)=> a+b 
+
+    let sum =  add(8,5)
+    console.log(sum)
+
+
+    
+    </script>   
+</body>
+</html>
