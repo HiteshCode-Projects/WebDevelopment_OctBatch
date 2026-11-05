@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Find The Second Largest Unique Number Without Sorting of Array
+
+        // Input :  [45,80,90,65,90,70]  //length 6 , Last index : length - 1
+        // Output : 80
+
+        //Solution 
+       function secondLargest(arr){
+        
+        let largest = -Infinity 
+        let seconDLargest = -Infinity
+
+
+        //Travel Inside Array
+        for(let i =0; i < arr.length ; i++){
+
+
+             if(arr[i] > largest){
+              
+               seconDLargest = largest 
+                        
+               largest = arr[i]
+
+             }else if( arr[i] > seconDLargest && arr[i] < largest){
+                   seconDLargest = arr[i]
+             }
+
+        }
+
+
+        return seconDLargest === -Infinity ? null : seconDLargest;
+
+       }
+
+
+    console.log(secondLargest([45,80,90,65,90,70]))     
+
+
+
+
+    //2 . Remove Duplicate Value from an Array
+
+    // Input : [101,102,103,101,104,102]
+
+    // Ouput ;[101,102,103,104]
+
+
+    function removeDuplicate(arr){
+            
+        let result = [];
+
+        for(let j = 0; j < arr.length; j++){
+
+                if(!result.includes(arr[j])){
+                    result.push(arr[j])
+                }
+        }
+
+
+        return result;
+
+
+    }
+
+
+
+    console.log(removeDuplicate([101,102,103,101,104,102,104]))
+
+
+
+
+
+
+    //3 . Count the Frequency of Each Character
+    // Input : "javascript"  //,length : Total Number of chcracter
+
+    // Output:{
+    //     j:1
+    //     a:2
+    //     v:1
+    //     s:1
+    //     c:1
+    //     r:1
+    // }
+
+    function countChatcter(str){
+
+
+        let frequency = {}
+
+
+        for(let k = 0; k < str.length ; k++){
+
+           let char =   str[k]
+
+           if(frequency[char]){
+                  frequency[char]++
+
+           }else{
+
+            frequency[char] = 1
+           }
+        }
+
+
+        return frequency
+
+    }
+
+    console.log(countChatcter("javascript"))
+
+        console.log(countChatcter("happy birthday"))
+
+
+        //4. Reverse String
+        //Input = "hello"
+        
+        //Output = "olleh"
+
+    </script>
+</body>
+</html>
