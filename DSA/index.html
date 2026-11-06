@@ -125,6 +125,119 @@
         
         //Output = "olleh"
 
+
+        function reverseString(str){
+
+            let reversed = ""
+
+            for(let l = str.length - 1; l >= 0 ; l--){
+
+                reversed += str[l]
+            }
+
+            return reversed
+        }
+
+
+        //5. Find Missing Numbers in an Array
+        // Input ; [1,2,3,5,6]  //sum - 17  and [1,2,3,4,5,6] - TotalSum: 21 . 21 - 17 : 4
+        //Output : 4
+
+        function findMissing(arr,n){
+            let expectedSum = n * (n+1)/2;
+
+            let actualSum = 0
+
+            for(let p =0; p < arr.length; p++){
+                   actualSum +=  arr[p]
+            }
+
+            return expectedSum - actualSum
+
+
+        }
+        console.log(findMissing[1,2,3,5,6],6)
+
+
+
+        //6. Check String is Palindrome 
+        // Input madam , output : madam - Palindrome
+
+        //TWO POINTER : left and right
+
+        function isPalindrome(str){
+            let left = 0
+            let right = str.length - 1
+
+            while(left < right){
+
+                if(str[left] !== str[right]){
+                    return false
+                }
+
+                left++
+                right--
+
+            }
+            return true
+        }
+        console.log(isPalindrome("madam"))
+
+
+
+        //7 . Find Maxium Number in array
+        //Input : [499,999,299,1499,799]
+        //Output : 1499
+
+       // Math.max()  - maxium value
+
+       function findMaxium(arr){
+
+             let max = arr[0]
+
+             for(let q = 1; q < q.length; q++){
+
+                if(arr[q] > max){
+                    max = arr[q]
+                }
+
+             }
+
+             return max
+       }
+
+
+       //8. Search for Data using Linear Search
+       //Inout [101,102,103,104,105]
+        //Target - 103
+       //Output : 2  - Index
+
+       function Searcgproduct(arr,target){
+
+        for(let t = 0; t < arr.length; t++){
+
+          
+            if(arr[t]  === target){
+               return t
+            }
+        }
+
+        return -1
+
+       }
+
+
+
+
+       //9. Move All Zeros to End
+       // input : [0,5,0,3,8,0,2]
+
+       // output : [5,3,8,2,0,0,0]
+
+       //let index = 0    // 1 , 2 , 3
+       
+
+         
     </script>
 </body>
 </html>
