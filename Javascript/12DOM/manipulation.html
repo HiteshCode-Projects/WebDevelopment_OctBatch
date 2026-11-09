@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Update()" >Add To Cart</button>
+    <p id="myp"></p>
+
+
+    <button id="btn" onclick="UpdateLogin()">Login</button>
+
+    <div id="myDiv">This is Normal Div</div>
+
+    <button onclick="UpdateTag()">Update Tag</button>
+
+
+    <p id="old">This is Old DUll Paragraph..</p>
+    <button onclick="updateStyle()">Style It</button>
+
+    <script>
+          
+          function Update(){
+             
+            //1. Select Element-Tag
+            const p = document.getElementById("myp")
+
+            //2. Update the Content 
+            p.textContent = "Product Added To Cart"
+
+
+          }
+
+          //2.
+          function UpdateLogin(){
+          const btn = document.getElementById("btn")
+
+          btn.textContent = "Logout"
+
+          }
+
+
+          //3. innerHTML - Update The tag itself
+          function UpdateTag(){
+
+            const box = document.getElementById("myDiv")
+ 
+            // One Tag - ""
+           // box.innerHTML = "<h1>This is Now Heading</h1>"
+
+           //Multiple Tag - ``
+           box.innerHTML = `
+           <h2>Hwllo User</h2>
+           <button>Greet</button>
+           <p>This is DOM magic</p>
+
+           `
+          }
+
+          function updateStyle(){
+            const para = document.getElementById("old")
+
+            //.style.propName
+            para.style.color = "red"
+            para.style.backgroundColor = "black"
+            para.style.textAlign = "center"
+            para.textContent = "This is New Style Paragraph"
+          }
+
+    </script>
+</body>
+</html>

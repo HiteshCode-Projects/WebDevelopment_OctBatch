@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="myp">Hello Good Evening</p>
+
+
+    <div class="abc">This is Div - 0</div>
+
+    <div class="abc">This is Div - 1</div>
+
+    <p>This is Second Paragraph</p>
+
+    <div class="xyz">NETFLIX - OTT</div>
+
+    <div class="xyz">AMAZON - ECOM</div>
+
+
+    
+    <script>
+    
+    //Indiviual Tag - Selecting it By Id
+    // document - webpage in js
+    // Element - HTML Tag     
+
+    const paragraphTag   =   document.getElementById("myp")
+    console.log(paragraphTag)
+
+    console.log(paragraphTag.textContent)
+
+
+  //Class Name
+    const boxes   =   document.getElementsByClassName("abc")
+
+    console.log(boxes)
+
+    console.log(boxes[1])
+
+    //TagName
+    const para =  document.getElementsByTagName("p")
+    console.log(para)
+
+    console.log(para[0])
+
+    console.log(para[1].textContent)
+
+
+    //querySelector - It Follows CSS selector Rule : #idName , .className , tag
+    // It will Only Select The First Element/Tag 
+             
+    const container =   document.querySelector(".xyz")
+    console.log(container)
+
+    //quertySelectorALL() - All the Tags
+      const boxC =   document.querySelectorAll(".xyz")
+    console.log(boxC)
+
+
+
+
+    
+    
+    </script>   
+</body>
+</html>
