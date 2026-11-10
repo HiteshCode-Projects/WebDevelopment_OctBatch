@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            height: 300px;
+            width: 350px;
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 12px;
+            margin: 10px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <input id="myin" placeholder="Type something.." >
+
+    <div class="top" id="mydiv">
+        <div class="btm">
+
+        </div>
+    </div>
+
+    <script>
+        //KeyDown
+
+        // const inputTag = document.getElementById("myin")
+
+        // inputTag.addEventListener('keydown',(e)=>{
+            
+        //     console.log('Key Pressed ' , e.key )  //.key - keywboard key
+        // })
+
+
+        //KeyUp
+        //  const inputTag = document.getElementById("myin")
+
+        // inputTag.addEventListener('keyup',(e)=>{
+            
+        //     console.log('Key Released ' , e.key )  //.key - keywboard key
+        // })
+
+
+        //Change  - Change in Value In Input tag
+         const inputTag = document.getElementById("myin")
+
+        inputTag.addEventListener('change',(xyz)=>{
+            
+            console.log('Value of Input  ' , xyz.target.value)  //.value - Input Value
+        })
+
+
+        const box = document.getElementById("mydiv")
+        box.addEventListener('mouseover',()=>{
+            box.style.backgroundColor = "green"
+        })
+
+         const boxe = document.getElementById("mydiv")
+        box.addEventListener('mouseout',()=>{
+            box.style.backgroundColor = "yellow"
+        })
+    </script>
+</body>
+</html>
