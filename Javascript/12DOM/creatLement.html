@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          
+          .abc{
+            background-color: blueviolet;
+          }
+
+      </style>  
+</head>
+
+<body>
+    <ul id="list">
+      <li>Water</li>
+
+
+    </ul>
+
+    <script>
+    const list = document.getElementById("list")
+
+    const li =  document.createElement('li')
+
+    li.classList = "abc"
+
+    li.textContent = "gym"
+
+    li.style.color = "red"
+
+    list.appendChild(li)
+
+
+    </script>
+</body>
+</html>
