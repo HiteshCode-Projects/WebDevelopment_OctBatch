@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //  localStorage - Acts Like Permanent , and can store Large amount of data
+
+       localStorage.clear()
+
+       //To store Data
+
+       localStorage.setItem("John" , ["Hello" , "good Morning" , "How are you" , 1232427687]   )
+
+       localStorage.setItem("cart", ["Shoes", "Tee", "Book"])
+
+        const cartItem   =     localStorage.getItem("cart")
+        
+        console.log(cartItem)
+    </script>
+</body>
+</html>
