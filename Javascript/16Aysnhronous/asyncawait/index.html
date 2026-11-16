@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function getMovie(movieName){
+             //Movie Data 
+
+             let url = `http://www.omdbapi.com/?t=${movieName}&apikey=a6606658`
+
+
+             //Fettching Data from API
+             try{
+
+                let response   =  await   fetch(url)
+                let  data      =  await   response.json()  
+                
+                console.log(data)  //ALL THE MOVIE DATA
+                
+                if(data.Response === "True"){
+                console.log(data.Actors)
+                console.log(data.Poster)
+                console.log(data.Year)
+                console.log(data.Plot)
+                }else{
+                    alert('Movie Not Found')
+                }
+
+             }catch(error){
+                //Catch Block will help us to catch the error
+                console.log('Error Fetching Data', error)
+             }
+               
+        }
+        getMovie("Avengers")
+
+
+
+
+        function extraTask(){
+            console.log("Hello Everyone Welcome TO PVR")
+        }
+        extraTask()
+
+
+    </script>
+</body>
+</html>
