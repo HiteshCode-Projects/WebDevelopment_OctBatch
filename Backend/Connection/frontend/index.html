@@ -13,6 +13,8 @@
 
    Email: <input type="email" placeholder="Enter email" id="email"><br><br>
 
+   Password :<input type="password" placeholder="*****" id="password"><br><br>
+
    <button type="submit">Submit</button>
     </form>
 
@@ -26,6 +28,7 @@
 
           name =    document.getElementById('name').value
           email =   document.getElementById('email').value
+          password = document.getElementById('password').value
 
 
             fetch('http://localhost:3000/login',{
@@ -33,7 +36,7 @@
                 headers:{
                     'Content-Type':'application/json'
                 },
-                body:  JSON.stringify({name,email})
+                body:  JSON.stringify({name,email,password})
 
                  })
 
